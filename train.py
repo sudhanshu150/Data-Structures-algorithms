@@ -1,5 +1,5 @@
 import re
-f=open("train.txt", "r")
+f=open("train.txt", "r")#file name 
 train_name=[]
 station_name=[]
 for i in f:
@@ -15,5 +15,5 @@ f=open("train.txt", "r")
 x=input("enter station name:")
 for i in f:
     if x in i:
-        s=re.match(r"\w*",i)
-        print(s.group(0))
+        s=re.match(r"\w*",i)#regex
+        print(s.group(0))#output will be the train name 
